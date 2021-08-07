@@ -21,6 +21,7 @@ containers:
   probe:
     path: /
     port: 8001
+  root: true
 
 volumes:
 - name: db
