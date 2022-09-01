@@ -15,9 +15,9 @@ Auxiliaries are either review-only databases or GUI dashboards for providing ins
 
 Documentation for configuration options available to each app can be found in the `/docs` directory.
 
-## Env Vars
+## Environment Variables
 
-Typically, the following vars need to be set to use any auxiliary:
+In additional to the variables defined in an auxiliary `.env` file, your pipeline might also need the following set:
 
 ```
 AUX_SERVICE_URL         domain name for default URLs and auth URL, i.e. staging.example.com
@@ -25,3 +25,5 @@ AUX_SERVICE_RELEASE     name to use for auxiliary
 AUX_VERSION             version tag used for deployments with Genero helm chart
 AUX_PREFIX              optional, a prefix used for review deployments with the Genero helm chart
 ```
+
+Check the `.yml` file of an auxiliary to determine if any `AUX_` environment variables are needed.
