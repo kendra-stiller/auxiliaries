@@ -11,7 +11,7 @@ kind: Elasticsearch
 metadata:
   name: ${AUX_SERVICE_RELEASE}
 spec:
-  version: 7.12.1
+  version: 7.16.3
   volumeClaimDeletePolicy: DeleteOnScaledownAndClusterDeletion
   updateStrategy:
     changeBudget:
@@ -34,7 +34,7 @@ spec:
           authz_exception: false
     volumeClaimTemplates:
       - metadata:
-          name: ${AUX_SERVICE_RELEASE}-elasticsearch-data
+          name: elasticsearch-data
         spec:
           accessModes:
           - ReadWriteOnce
