@@ -6,11 +6,10 @@
 The service is available on review at: 
 
 ```
-${AUX_SERVICE_RELEASE}-master:9200
+${AUX_SERVICE_RELEASE}-elasticsearch-es-http:9200
 ```
 
 Supported versions:
-- 6
 - 7
 
 | Variable     | Required | Default  | Purpose  |
