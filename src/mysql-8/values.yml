@@ -55,6 +55,8 @@ containers:
 - name: app
   ports:
     - containerPort: 3306
+  cmd:
+    - --default-authentication-plugin=mysql_native_password
   cpu:
     request: 1000m
     limit: 1000m
